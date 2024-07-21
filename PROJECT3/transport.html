@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24x7 Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,100;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav class="navbar">
+            <a href="index.html" class="navbar-brand"><img src="images/logo.jpg" alt="Logo"></a>
+            <div class="nav_links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICE</a></li>
+                    <li><a href="e-soft.html">E-SOFT</a></li>
+                    <li><a href="transport.html">TRANSPORT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="about_h1">Transport</h1>
+    </section>
+
+    <div class="trans">
+        <p class="trans-para">For Managing the transports of all over india we create an e-Soft Transport Module.</p>
+    </div>
+    
+
+    <div class="text_box-1">
+        <img src="images/Login.png">
+        <a href="loginform.html" class="h_button-login">Login to e-soft</a>
+        
+    </div>
+
+   
+        <h1 class="facilities">Facilities of Transport Management Module</h2>
+
+
+
+    <div class="feature-section">
+        <div class="container">
+          <div class="features">
+            <div class="column">
+              <p class="feature-para">Easy Bilty Entry System-With Different Bilty Numbers</p>
+              <p class="feature-para">Crossing Bilty System</p>
+              <p class="feature-para">Luggage inward & Outward management</p>
+              <p class="feature-para">Software With Zero Defect</p>      
+              <p class="feature-para">Use of Client Server Technology</p>
+              <p class="feature-para">Availability of Online & Offline Softwares</p>
+            </div>
+            <div class="column">
+              <p class="feature-para">Strong Security System</p>
+              <p class="feature-para">Hindi & English Multi-Languages</p>
+              <p class="feature-para">Costumized or Flexible System</p>
+              <p class="feature-para">Cheap Maintainance Charges</p>
+              <p class="feature-para">Financial Accounting System</p>
+              <p class="feature-para">Company Billing</p>
+              <p class="feature-para">POD Entry</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    
+      
+
+
+
+    <!-------------------footer----------------------------->
+<section class="footer">
+    <h4 class="footer_h4">About Us</h4>
+    <p class="footer_para">24x7 Technologies has Been industry's standard Software Service Provider ever since 1997 <br>when in this world software took A major role of life.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+    </div>
+
+
+</section>
+
+
+
+
+
+    <!--------------Javascript for Togle Menu-------------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu()
+    {
+        navLinks.style.right="0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right="-200px";
+    }
+    var navLinks = document.querySelector('.nav_links');
+var menuIcon = document.querySelector('nav .fa-solid');
+
+menuIcon.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+});
+
+</script>
+
+<script src="scripts.js"></script>
+    
+</body>
+</html>

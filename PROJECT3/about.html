@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24x7 Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,100;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav class="navbar">
+            <a href="index.html" class="navbar-brand"><img src="images/logo.jpg" alt="Logo"></a>
+            <div class="nav_links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICE</a></li>
+                    <li><a href="e-soft.html">E-SOFT</a></li>
+                    <li><a href="transport.html">TRANSPORT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="about_h1">About Us</h1>
+    </section>
+
+    
+
+<!--------------about us content------------>
+<section class="about_us">
+    <div class="row_about">
+        <div class="about_col">
+            <h1 class="about_col-h1">Windows & Web Based<br> Applications</h1>
+            <p class="about_col-para">We provide windows applications in many fields like <br>Transport, HR Management, School Management <br> etc. Online and Offline both choices are available  <br> with a friendly user interface because Windows Application  <br>is a user build an application that can run on a Windows <br> platform. The windows application has a graphical user interface that is provided by Windows Forms.</p>
+        </div>
+        <div class="about_col about_col-img">
+            <img src="images/11-about.jpg" class="img-fluid" alt="Windows & Web Based Applications">
+        </div>
+    </div>
+
+     
+     <div class="row_about row_reverse">
+        <div class="about_col about_col-img">
+            <img src="images/22-about.jpg" class="img-fluid" alt="Custom Software Development">
+        </div>
+        <div class="about_col">
+            <h1 class="about_col-h1">Web Development<br> & Design</h1>
+            <p class="about_col-para">We also develop and design webpages for many fileds based n customer requirement with three tire application and with friendly user interface. Our website developers provide expert web application development and web design services to our clients. Appnovation offers a variety of website design and development services, from creating mobile web development solutions and responsive website designs, to building custom e-commerce and intranet experiences using the latest and proven web technologies.</p>
+        </div>
+    </div>
+
+    <div class="row_about">
+        <div class="about_col">
+            <h1 class="about_col-h1">Customer Support &<br> Data Maintenance</h1>
+            <p class="about_col-para">We are standing 24x7 hours for our customer to support and their maintenance because Customer support is a range of customer services to assist customers in making cost effective and correct use of a product. It includes assistance in planning, installation, training, troubleshooting, maintenance, upgrading, and disposal of a product. We proactively handle the maintenance of software to ensure that your software is bug-free at deployment. We follow the best application software maintenance practices to make your software robust and secure.</p>
+        </div>
+        <div class="about_col about_col-img">
+            <img src="images/33-about.jpg" class="img-fluid" alt="Mobile App Development">
+        </div>
+
+
+     </div>
+
+
+</section>
+
+   
+           
+
+<!-------------------footer----------------------------->
+<section class="footer">
+    <h4 class="footer_h4">About Us</h4>
+    <p class="footer_para">24x7 Technologies has Been industry's standard Software Service Provider ever since 1997 <br>when in this world software took A major role of life.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+    </div>
+
+
+</section>
+
+
+
+
+
+    <!--------------Javascript for Togle Menu-------------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu()
+    {
+        navLinks.style.right="0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right="-200px";
+    }
+    var navLinks = document.querySelector('.nav_links');
+var menuIcon = document.querySelector('nav .fa-solid');
+
+menuIcon.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+});
+
+</script>
+    
+</body>
+</html>

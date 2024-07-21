@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24x7 Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,100;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav class="navbar">
+            <a href="index.html" class="navbar-brand"><img src="images/logo.jpg" alt="Logo"></a>
+            <div class="nav_links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICE</a></li>
+                    <li><a href="e-soft.html">E-SOFT</a></li>
+                    <li><a href="transport.html">TRANSPORT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="about_h1">Registration</h1>
+
+    </section>
+       
+    <div class="demo_regis">
+        <p class="demo-para">Get a free demo of e-Soft by meeting up our experts by filling this Simple Form and register for Demonstration.</p>
+    </div>
+
+    <div class="demo_formm">
+        <form class="demo" action="form-handler2.php" method="POST">
+         <div class="form_container">
+             <div class="form_control">
+                 <label for="full_name">Full Name</label>
+                 <input id="full_name" name="full_name" placeholder="Enter Your Name..." required />
+             </div>
+             <div class="form_control">
+                 <label for="firm_name">Firm name</label>
+                 <input id="firm_name" name="firm_name" placeholder="Enter Firm Name..." required />
+             </div>
+             <div class="form_control">
+                 <label for="email">Email</label>
+                 <input type="email" id="email" name="email" placeholder="Enter email..." required />
+             </div>  
+             <div class="form_control">
+                 <label for="contact">Contact No.</label>
+                 <input type="number" name="contact" id="contact" placeholder="Enter Contact No..." required />
+            </div>  
+            <div class="textarea_control">
+             <label for="address">Address</label>
+             <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter Address..." required></textarea>
+             <div class="form_control">
+                 <label for="software_module">Software Module</label>
+                 <input name="software_module" id="software_module" placeholder="Enter Software Module..." required />
+            </div>
+         </div>
+ 
+         <div class="button_container">
+             <button type="submit">Submit</button>
+         </div>
+           </form>
+        </div>
+
+<!-------------------footer----------------------------->
+<section class="footer">
+    <h4 class="footer_h4">About Us</h4>
+    <p class="footer_para">24x7 Technologies has Been industry's standard Software Service Provider ever since 1997 <br>when in this world software took A major role of life.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+    </div>
+
+
+</section>
+
+
+
+
+
+    <!--------------Javascript for Togle Menu-------------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu()
+    {
+        navLinks.style.right="0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right="-200px";
+    }
+    var navLinks = document.querySelector('.nav_links');
+var menuIcon = document.querySelector('nav .fa-solid');
+
+menuIcon.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+});
+
+</script>
+    
+</body>
+</html>
